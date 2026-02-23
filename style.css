@@ -87,6 +87,7 @@ h1 {
     /* box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4); */
 }
 
+/* fin de header */
 
 
 
@@ -98,6 +99,180 @@ h1 {
 
 
 
+
+
+
+
+
+
+
+/* debut de signin */
+
+.signin {
+    background-color: #B0C0D4;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: clamp(369px, 50%, 670px);
+    font-size: 24px;
+}
+
+.signin h2 {
+    font-family: Aldrich;
+    font-size: clamp(24px, 2vw, 40px);
+    color: black;
+    margin: 10px 20px 10px 20px;
+}
+
+.signinForm {
+    font-family: sans-serif;
+    /* font-size: clamp(20px, 2vw, 24px); */
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+}
+
+.labelEtInput {
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* border: 1px solid red; */
+}
+
+.labelEtInput label, .labelEtInput input {
+    /* font-size: clamp(20px, 2vw, 24px); */
+    /* margin: 10px 0px 10px 0px; */
+    /* width: 100%; */
+    display: flex;
+    /* white-space: nowrap; */
+}
+
+.labelEtInput label {
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    /* display:flex; */
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+
+.labelEtInput input {
+    width: 288px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+
+
+@media screen and (max-width: 1025px) {
+
+    .labelEtInput label {
+        justify-content: flex-start;   
+        width: 288px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .labelEtInput {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.conditionsAndButton {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* border: 1px solid blue; */
+}
+
+.conditionsAndButton p {
+    width: 256px;
+    /* height: 58px; */
+    font-style: italic;
+    font-size: 16px;
+    padding: 10px 20px 10px 0px;
+    /* border: 1px solid green; */
+}
+
+@media screen and (max-width: 1025px) {
+
+    .conditionsAndButton {
+        flex-direction: column;
+    }
+
+    .conditionsAndButton p {
+        padding: 10px 0px 5px 0px;
+    }
+
+}
+
+.errorSignin {
+    /* display: none; */
+    color: #E03D3D;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid #E03D3D;
+    text-align: center;
+    width: 190px;
+    margin: 10px 0px 10px 0px;
+}
+
+.signinForm button {
+    width: 251px;
+    height: 63px;
+    border-radius: 30px;
+    background-color: #002388;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.containerErrorAndButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+/* fin de signin */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* début de footer */
 
 footer {
     background-color: #5DA5B3;

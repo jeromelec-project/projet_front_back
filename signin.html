@@ -18,10 +18,44 @@
     </header>
 
     <div class="content">
-        <p>   
-            <h2>Contenu</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Blanditiis nihil obcaecati quos molestiae nobis error possimus,<br> itaque maiores consequuntur illo.
-        </p>
+
+        <div class="signin">
+
+            <h2>Créer votre compte</h2>
+
+            <form action="" method="post" class="signinForm">
+                <div class="labelEtInput">
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="labelEtInput">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="labelEtInput">
+                <label for="password">Mot de passe : *</label>
+                <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="conditionsAndButton">
+                    <p>
+                        (*) Le mot de passe doit contenir au moins 8 caractères et un caractère spécial.
+                    </p>
+                    <div class="containerErrorAndButton">
+                        <div class="errorSignin">Ce compte existe déjà.</div>
+                        <button type="submit">Créer un compte</button>
+                    </div>
+                </div>
+
+
+
+            </form>   
+
+
+        </div>
+
     </div>
 
 
