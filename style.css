@@ -116,7 +116,7 @@ h1 {
     margin: 10px 20px 0px 20px;
 }
 
-.signinForm {
+.signinForm .loginForm{
     font-family: sans-serif;
     margin: 10px 0px 10px 0px;
     width: 100%;
@@ -213,7 +213,8 @@ input {
     margin: 10px 0px 10px 0px;
 }
 
-.signinForm button {
+.signinForm button, .loginForm button {
+    margin: 10px 0px 10px 0px;
     width: 251px;
     height: 63px;
     border-radius: 30px;
