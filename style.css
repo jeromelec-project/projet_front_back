@@ -94,11 +94,6 @@ h1 {
 
 
 
-
-
-
-
-
 /* debut de signin */
 
 .signin {
@@ -110,6 +105,7 @@ h1 {
     flex-direction: column;
     width: clamp(369px, 50%, 670px);
     font-size: 24px;
+    margin: 30px;
 }
 
 .signin h2 {
@@ -117,7 +113,7 @@ h1 {
     font-size: clamp(24px, 2vw, 40px);
     text-decoration: underline;
     color: black;
-    margin: 10px 20px 10px 20px;
+    margin: 10px 20px 0px 20px;
 }
 
 .signinForm {
@@ -206,6 +202,7 @@ input {
 }
 
 .errorSignin {
+    display: none;
     color: #E03D3D;
     font-size: 16px;
     font-style: italic;
@@ -418,6 +415,7 @@ select {
 }
 
 .errorFormAjout {
+    display: none;
     color: #E03D3D;
     font-size: 16px;
     font-style: italic;
