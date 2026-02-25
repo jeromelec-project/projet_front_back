@@ -25,7 +25,6 @@ body {
 
 header {
     background-color: #5DA5B3;
-    /* height: 150px; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -53,21 +52,17 @@ h1 {
 
 .connectionButton {
     width: clamp(50px, 10vw, 200px);
-    /* height: 50px; */
     margin-right: clamp(10px, 4vw, 60px);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid white; */
 }
 
 .menuBurger {
     background-image: url('./fi-rr-menu-burger.svg');
     height: 32px;
-    /* width: 100%; */
     color: #fff;
     font-size: 32px;
-    /* border: 1px solid red; */
 }
 
 @media screen and (min-width: 769px) {
@@ -77,13 +72,11 @@ h1 {
 }
 
 .content {
-    /* height: 500px; */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0px 10px 0px 10px;
     /* box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4); */
 }
 
@@ -122,19 +115,18 @@ h1 {
 .signin h2 {
     font-family: Aldrich;
     font-size: clamp(24px, 2vw, 40px);
+    text-decoration: underline;
     color: black;
     margin: 10px 20px 10px 20px;
 }
 
 .signinForm {
     font-family: sans-serif;
-    /* font-size: clamp(20px, 2vw, 24px); */
     margin: 10px 0px 10px 0px;
     width: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     padding: 0px 10px 0px 10px;
 }
@@ -146,26 +138,18 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    /* flex-wrap: wrap; */
-    /* border: 1px solid red; */
 }
 
 .labelEtInput label, .labelEtInput input {
-    /* font-size: clamp(20px, 2vw, 24px); */
-    /* margin: 10px 0px 10px 0px; */
-    /* width: 100%; */
     display: flex;
-    /* white-space: nowrap; */
 }
 
 .labelEtInput label {
     width: 200px;
     margin-right: 10px;
     margin-bottom: 0px;
-    /* display:flex; */
     justify-content: flex-end;
     align-items: center;
-    /* border: 1px solid green; */
 }
 
 .labelEtInput input {
@@ -174,7 +158,10 @@ h1 {
     border: 1px solid black;
 }
 
-
+input {
+    font-size: 20px;
+    padding-left: 20px;
+}
 
 @media screen and (max-width: 1025px) {
 
@@ -197,17 +184,13 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    /* flex-wrap: wrap; */
-    /* border: 1px solid blue; */
 }
 
-.conditionsAndButton p {
+.mdpMessage{
     width: 256px;
-    /* height: 58px; */
     font-style: italic;
     font-size: 16px;
     padding: 10px 20px 10px 0px;
-    /* border: 1px solid green; */
 }
 
 @media screen and (max-width: 1025px) {
@@ -216,14 +199,13 @@ h1 {
         flex-direction: column;
     }
 
-    .conditionsAndButton p {
+    .mdpMessage {
         padding: 10px 0px 5px 0px;
     }
 
 }
 
 .errorSignin {
-    /* display: none; */
     color: #E03D3D;
     font-size: 16px;
     font-style: italic;
@@ -242,7 +224,6 @@ h1 {
     color: white;
     font-size: 24px;
     font-weight: bold;
-    
 }
 
 .containerErrorAndButton {
@@ -250,7 +231,6 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border: 1px solid red; */
 }
 
 /* fin de signin */
@@ -260,10 +240,353 @@ h1 {
 
 
 
+/* login */
+.createAccount {
+    text-decoration:underline;
+    width: 256px;
+    font-size: 16px;
+    padding: 15px 20px 15px 20px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.conditionsAndButtonLogin {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1025px) {
+
+    .conditionsAndButtonLogin {
+        flex-direction: column-reverse;
+    }
+}
+
+/* fin de login */
 
 
 
 
+
+
+
+
+
+
+
+/* debut de form d'ajout */
+
+.divFormAjout {
+    background-color: #B0C0D4;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 10px;
+    margin: 30px 30px 50px 30px;
+}
+
+.divFormAjout h2 {
+    font-family: Aldrich;
+    font-size: clamp(24px, 2vw, 40px);
+    text-decoration: underline;
+    color: black;
+    margin: 10px 20px 20px 20px;
+}
+
+.FormAjout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.labelEtInputFormAjout {
+    margin: 0px 0px 25px 0px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.labelEtInputFormAjout label, .labelEtInputFormAjout input {
+     display: flex;
+}
+
+.labelEtInputFormAjout label {
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.labelEtInputFormAjout input {
+    width: 288px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.labelEtInputFormAjout select {
+    width: 288px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+select {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.containerButtonFormAjout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerButtonFormAjout button {
+    width: 251px;
+    height: 63px;
+    border-radius: 30px;
+    background-color: #002388;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+} 
+
+@media screen and (max-width: 1025px) {
+
+    .labelEtInputFormAjout label {
+        justify-content: flex-start;   
+        width: 288px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .labelEtInputFormAjout {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.buttonEtMessage p {
+    display: none;
+    font-style: italic;
+    font-size: 16px;
+    padding: 0px 0px 20px 0px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1620px) {
+
+    .FormAjout {
+        flex-direction: column;
+    }
+
+    .buttonEtMessage {
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    font-size: 16px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .buttonEtMessage p {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+.requirement {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    width: 50%;
+    margin: 10px 0px 10px 0px;
+}
+
+.errorFormAjout {
+    color: #E03D3D;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid #E03D3D;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    width: 400px;
+}
+
+@media screen and (max-width: 1620px) {
+
+    .labelEtInputFormAjout p {
+    display: inline-block;
+    }
+
+    .requirement {
+     display: none;
+    }
+
+    .errorFormAjout {
+        width: 400px;
+    }
+
+}
+
+
+@media screen and (max-width: 1025px) {
+    .errorFormAjout {
+        width: 288px;
+    }
+}
+
+.buttonEtMessageDesktop {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+width: 100%;
+}
+
+
+/* fin de form d'ajout */
+
+
+
+
+
+
+
+
+
+
+
+/* debut form de tri */
+
+.titreTableau {
+    display: none;
+    font-family: Aldrich;
+    font-size: clamp(28px, 2vw, 40px);
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+.selecteurDeTri {
+    border-radius: 30px;
+    background-color: #002388;
+    color: white;
+    margin: 50px 20px 50px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.selecteurDeTri p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-left: 5%;
+}
+
+.boiteTriStatus, .boiteTriType {
+    display: flex;
+    flex-direction: row;
+}
+
+.boiteTriType {
+    margin-right: 5%;
+}
+
+.boiteTriStatus label, .boiteTriType label {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    margin: 0px 15px 0px 0px;
+    white-space: nowrap;
+}
+
+.boiteTriStatus select, .boiteTriType select {
+    width: 288px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 1025px) {
+
+    .boiteTriStatus, .boiteTriType {
+        flex-direction: column;
+    }
+
+    .boiteTriStatus select, .boiteTriType select {
+        margin: 5px 0px 20px 0px;
+    }
+
+}
+
+@media screen and (max-width: 1620px) {
+
+    .titreTableau {
+        display: block;
+    }
+
+    .selecteurDeTri {
+        align-items: flex-end;
+        width: auto;
+    }   
+
+    .selecteurDeTri p {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-left: 0px;
+    }
+
+    .boiteTriStatus label, .boiteTriType label {
+        align-items: center;
+        margin: 14px 15px 0px 0px;
+    }
+
+    .selecteurDeTri {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boiteTriStatus select, .boiteTriType select {
+    margin: 5px 0px 5px 0px;
+    }
+
+    .boiteTriType {
+        margin-right: 0px;
+        justify-content: flex-end;
+    }
+
+}
+
+
+
+
+
+
+
+/* fin form de tri */
 
 
 
@@ -276,13 +599,11 @@ h1 {
 
 footer {
     background-color: #5DA5B3;
-    /* height: 260px; */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* box-shadow: 0px -15px 15px rgba(0, 0, 0, 0.4); */
 }
 
 .copyright {
@@ -298,9 +619,8 @@ footer {
 }
 
 .copyright span {
-    /* display: inline-block; */
     white-space: nowrap;
-    display:flex; 
+    display: flex; 
     padding: 0px 3px 0px 3px;
 }
 
@@ -318,7 +638,6 @@ footer {
 }
 
 .mentions span {
-    /* display: inline-block; */
     white-space: nowrap;
     display:flex; 
     padding: 0px 3px 0px 3px;

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <title>Signin</title>
+    <title>Login</title>
 </head>
 <body>
 <div class="wrapper">
@@ -21,13 +21,9 @@
 
         <div class="signin">
 
-            <h2>Créer votre compte</h2>
+            <h2>Connection</h2>
 
             <form action="" method="post" class="signinForm">
-                <div class="labelEtInput">
-                <label for="username">Nom d'utilisateur :</label>
-                <input type="text" id="username" name="username" required>
-                </div>
 
                 <div class="labelEtInput">
                 <label for="email">Email :</label>
@@ -39,13 +35,13 @@
                 <input type="password" id="password" name="password" required>
                 </div>
 
-                <div class="conditionsAndButton">
-                    <p class="mdpMessage">
-                        (*) Le mot de passe doit contenir au moins 8 caractères et un caractère spécial.
+                <div class="conditionsAndButtonLogin">
+                    <p class="createAccount">
+                        <a href="./signin.html">Créer un compte</a>
                     </p>
                     <div class="containerErrorAndButton">
-                        <div class="errorSignin">Ce compte existe déjà.</div>
-                        <button type="submit">Créer un compte</button>
+                        <div class="errorSignin">Ce compte n’existe pas.</div>
+                        <button type="submit">Se Connecter</button>
                     </div>
                 </div>
 

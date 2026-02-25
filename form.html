@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <title>JobNest</title>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <img src="logo_jobnest.png" alt="Logo" class="logo">
+        <h1>JobNest</h1>
+        <div class="connectionButton">
+            <div class="menuBurger"><i class="fi fi-rr-menu-burger"></i></div>
+        </div>
+    </header>
+
+    <div class="content">
+
+        <div class="divFormAjout">
+
+            <h2>Formulaire d'ajout</h2>
+
+            <form action="" method="post" class="FormAjout">
+
+                <div class="blockResponssive">
+
+                    <div class="labelEtInputFormAjout">
+                        <label for="entreprise_name">Nom entreprise : *</label>
+                        <input type="text" id="entreprise_name" name="entreprise_name" required>
+                    </div>
+
+                    <div class="labelEtInputFormAjout">
+                        <label for="poste">Poste : *</label>
+                        <input type="text" id="poste" name="poste" required>
+                    </div>
+
+                    <div class="labelEtInputFormAjout">
+                        <label for="statut">Statut :</label>
+                    <select name="statut" id="statut">
+                        <option value="candidature_envoyee">Candidature envoyée</option>
+                        <option value="candidature_refusee">Candidature refusée</option>
+                        <option value="candidature_acceptee">Candidature acceptée</option>
+                    </select>
+                    </div>
+
+                </div>
+
+
+                <div class="blockResponssive">
+
+                    <div class="labelEtInputFormAjout">
+                        <label for="date">Date d'envoi :</label>
+                        <input type="text" id="date" name="date">
+                    </div>
+
+                    <div class="labelEtInputFormAjout">
+                        <label for="lieux" id="lieux">Lieux :</label>
+                        <input type="text" id="lieux" name="lieux">
+                    </div>
+
+                    <div class="labelEtInputFormAjout">
+                        <label for="type">Type :</label>
+                    <select name="type" id="type">
+                        <option value="stage">Demande de stage</option>
+                        <option value="emploi">Demande d'emploi</option>
+                        <option value="alternance">Demande d'alternance</option>
+                    </select>
+                    </div>
+
+                </div>
+
+
+                <div class="blockResponssive">
+
+                    <div class="labelEtInputFormAjout">
+                        <label for="contact">Contact :</label>
+                        <input type="text" id="contact" name="contact">
+                    </div>
+
+                    <div class="labelEtInputFormAjout">
+                        <label for="notes">Notes :</label>
+                        <input type="text" id="notes" name="notes">
+                    </div>
+
+
+                    <div class="buttonEtMessage">
+                        <p>
+                        (*) Ces champs doivent être complétés
+                        </p>
+                        <div class="containerButtonFormAjout">
+                            <button type="submit">Ajouter au tableau</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>   
+
+            <div class="buttonEtMessageDesktop">
+                        <p class="requirement">
+                        (*) Ces champs doivent être complétés
+                        </p>
+                        <div class="errorFormAjout">Tout les champs obligatoires ne sont pas remplis</div>
+            </div>
+
+        </div>
+
+        
+            <h2 class="titreTableau">SUIVI DES DEMANDES PROFESSIONNELLES</h2>
+        
+
+        <div class="selecteurDeTri">
+            <p>Trier les demandes par :</p>
+
+            <div class="boiteTriStatus">
+                <label for="triStatus">Statut :</label>
+                <select name="triStatus">
+                    <option value="candidature_envoyee">Candidature envoyée</option>
+                    <option value="candidature_refusee">Candidature refusée</option>
+                    <option value="candidature_acceptee">Candidature acceptée</option>
+                </select>
+            </div>
+
+            <div class="boiteTriType">
+                <label for="triType">Type :</label>
+                <select name="triType">
+                    <option value="stage">Demande de Stage</option>
+                    <option value="emploi">Demande d'Emploi</option>
+                    <option value="alternance">Demande d'Alternance</option>
+                </select>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div><!-- fin de content -->
+
+    <footer>
+        <p class="copyright"><span>Copyright 2026 &copy; JobNest |</span> <span>Tous droits réservés</span></p>
+        <p class="mentions"><span>Mentions Légales |</span> <span>Politique de confidentialité</span></p>
+        <img src="logo_jobnest.png" alt="Logo" class="logo_footer">
+    </footer>
+</div><!-- fin de wrapper -->
+</body>
+</html>
