@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <script src="script.js" defer></script>
     <title>Login</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
 
             <h2>Connection</h2>
 
-            <form action="" method="post" class="loginForm">
+            <form method="get" class="loginForm">
 
                 <div class="labelEtInput">
                 <label for="email">Email :</label>
@@ -31,8 +32,8 @@
                 </div>
 
                 <div class="labelEtInput">
-                <label for="password">Mot de passe : *</label>
-                <input type="password" id="password" name="password" required>
+                <label for="pass">Mot de passe :</label>
+                <input type="password" id="pass" name="password" minlength="8" required>
                 </div>
 
                 <div class="conditionsAndButtonLogin">
@@ -41,7 +42,7 @@
                     </p>
                     <div class="containerErrorAndButton">
                         <div class="errorSignin">Ce compte n’existe pas.</div>
-                        <button type="submit">Se Connecter</button>
+                        <button onclick="checkLoginForm()" type="submit" >Se Connecter</button>
                     </div>
                 </div>
 
