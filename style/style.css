@@ -34,7 +34,7 @@ header {
 }
 
 @font-face {
-    src: url(./Aldrich-Regular.ttf);
+    src: url(../font/Aldrich-Regular.ttf);
     font-family: Aldrich;
 }
 
@@ -209,7 +209,7 @@ input {
     font-weight: bold;
     border: 2px solid #E03D3D;
     text-align: center;
-    width: 190px;
+    /* width: 190px; */
     margin: 10px 0px 10px 0px;
 }
 

@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="img/logo_jobnest_link.png">
+    <script src="js/login.js" defer></script>
     <title>Login</title>
 </head>
 <body>
 <div class="wrapper">
     <header>
-        <img src="logo_jobnest.png" alt="Logo" class="logo">
+        <img src="img/logo_jobnest.png" alt="Logo" class="logo">
         <h1>JobNest</h1>
         <div class="connectionButton">
             <div class="menuBurger"><i class="fi fi-rr-menu-burger"></i></div>
@@ -33,7 +34,7 @@
 
                 <div class="labelEtInput">
                 <label for="pass">Mot de passe :</label>
-                <input type="password" id="pass" name="password" minlength="8" required>
+                <input type="password" id="password" name="password" minlength="4" required>
                 </div>
 
                 <div class="conditionsAndButtonLogin">
@@ -42,7 +43,7 @@
                     </p>
                     <div class="containerErrorAndButton">
                         <div class="errorSignin">Ce compte n’existe pas.</div>
-                        <button onclick="checkLoginForm()" type="submit" >Se Connecter</button>
+                        <button type="submit" >Se Connecter</button>
                     </div>
                 </div>
 
@@ -59,7 +60,7 @@
     <footer>
         <p class="copyright"><span>Copyright 2026 &copy; JobNest |</span> <span>Tous droits réservés</span></p>
         <p class="mentions"><span>Mentions Légales |</span> <span>Politique de confidentialité</span></p>
-        <img src="logo_jobnest.png" alt="Logo" class="logo_footer">
+        <img src="img/logo_jobnest.png" alt="Logo" class="logo_footer">
     </footer>
 </div><!-- fin de wrapper -->
 </body>
