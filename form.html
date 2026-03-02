@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="shortcut icon" href="img/logo_jobnest_link.png">
-    <script src="script.js" defer></script>
+    <script src="js/form.js" defer></script>
     <title>JobNest</title>
 </head>
 <body>
@@ -15,7 +15,9 @@
         <img src="img/logo_jobnest.png" alt="Logo" class="logo">
         <h1>JobNest</h1>
         <div class="connectionButton">
-            <div class="menuBurger"><i class="fi fi-rr-menu-burger"></i></div>
+            <!-- <div class="menuBurger"><i class="fi fi-rr-menu-burger"></i></div> -->
+            <div class="userWelcome">Bienvenue</div>
+            <div class="logout"></div>
         </div>
     </header>
 
@@ -25,26 +27,28 @@
 
             <h2>Formulaire d'ajout</h2>
 
-            <form action="" method="post" class="FormAjout">
+            <form method="get" class="FormAjout">
 
                 <div class="blockResponssive">
 
                     <div class="labelEtInputFormAjout">
                         <label for="entreprise_name">Nom entreprise : *</label>
-                        <input type="text" id="entreprise_name" name="entreprise_name" required>
+                        <input type="text" id="entreprise_name" name="entreprise_name">
                     </div>
 
                     <div class="labelEtInputFormAjout">
                         <label for="poste">Poste : *</label>
-                        <input type="text" id="poste" name="poste" required>
+                        <input type="text" id="poste" name="poste">
                     </div>
 
                     <div class="labelEtInputFormAjout">
                         <label for="statut">Statut :</label>
                     <select name="statut" id="statut">
-                        <option value="candidature_envoyee">Candidature envoyée</option>
-                        <option value="candidature_refusee">Candidature refusée</option>
-                        <option value="candidature_acceptee">Candidature acceptée</option>
+                        <option value="1">Candidature envoyée</option>
+                        <option value="2">Candidature refusée</option>
+                        <option value="3">Candidature acceptée</option>
+                        <option value="4">Premier entretien</option>
+                        <option value="5">Sans réponse</option>
                     </select>
                     </div>
 
@@ -59,16 +63,17 @@
                     </div>
 
                     <div class="labelEtInputFormAjout">
-                        <label for="lieux" id="lieux">Lieux :</label>
-                        <input type="text" id="lieux" name="lieux">
+                        <label for="address">Addresse :</label>
+                        <input type="text" id="address" name="address">
                     </div>
 
                     <div class="labelEtInputFormAjout">
                         <label for="type">Type :</label>
                     <select name="type" id="type">
-                        <option value="stage">Demande de stage</option>
-                        <option value="emploi">Demande d'emploi</option>
-                        <option value="alternance">Demande d'alternance</option>
+                        <option value="1">CDI</option>
+                        <option value="3">CDD</option>
+                        <option value="2">Stage</option>
+                        <option value="4">Alternance</option>
                     </select>
                     </div>
 
@@ -137,10 +142,9 @@
 
         </div>
 
+        <div class="tableau"></div>
 
-
-
-
+        <div class="cardsContainer"></div>
 
 
 
